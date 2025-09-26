@@ -8,7 +8,9 @@ function moveBackground(event) {
     const y = event.clientY * scaleFactor;
     
     for (let i = 0; i < shapes.length; ++i) {
-        shapes[i].computedStyleMap.transform = 'translate(${x}px, $(y)px)'
+        const isOdd = i % 2 !== 0;
+        const boolInt = isOdd ? -1 : 1;
+        shapes[i].computedStyleMap.transform = 'translate(${x * boolInt}px, $(y)px)'
     }
 }
 
