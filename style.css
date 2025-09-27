@@ -385,7 +385,7 @@ nav {
 }
 
 .modal__contact {
-    transform: translateX(-110%);
+    transform: translateX(110%);
     background-color: #242424;
     color: white;
 }
